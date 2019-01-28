@@ -23,6 +23,17 @@ git clone https://github.com/rawlingsj/knative-build-pipeline-sample-yaml.git &&
 kubectl apply -f yaml/
 ```
 
+## Check status of build
+```
+kubectl get pods -w
+```
+
+## If no build pod starts
+
+```
+kubectl get pipelineruns/tutorial-pipeline-run -o yaml
+```
+
 --------------------------
 
 ## Delete sample yaml
