@@ -16,9 +16,16 @@ helm upgrade --install --set auth.docker.username=fred --set auth.docker.passwor
 git clone https://github.com/rawlingsj/knative-build-pipeline-sample-yaml.git && cd knative-build-pipeline-sample-yaml
 ```
 ## Replace `rawlingsj` with your dockerhub username
-```
-sed s/rawlingsj/[YOUR_DOCKERHUB_USERNAME]/g yaml/1-image-pipeline-resource.yaml
-```
+[./yaml/1-image-pipeline-resource.yaml#L9](yaml/1-image-pipeline-resource.yaml#L9)
+
+## Apply sample yaml
 ```
 kubectl apply -f yaml/
+```
+
+--------------------------
+
+## Delete sample yaml
+```
+kubectl delete -f yaml/
 ```
