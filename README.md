@@ -28,6 +28,10 @@ kubectl apply -f yaml/
 kubectl get pods -w
 ```
 
+## Check dockerhub for the new image
+
+https://hub.docker.com/r/[YOUR_DOCKERHUB_USERNAME]
+
 ## If no build pod starts
 
 ```
